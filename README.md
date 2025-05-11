@@ -2,16 +2,18 @@
 
 [Programação Popular](https://www.youtube.com/@programacaopopular/)
 
-- [Documentação do pacote](https://ctan.org/pkg/biblatex-abnt)
-- Ferramentas usadas:
+- **Documentações**
+  - [`biblatex-abnt` (CTAN)](https://ctan.org/pkg/biblatex-abnt)
+  - [`hyperref` (CTAN)](https://ctan.org/pkg/hyperref)
+- **Ferramentas usadas**:
   - [doi2bib](https://www.doi2bib.org/)
   - [Extensão BibItNow!](https://addons.mozilla.org/pt-BR/firefox/addon/bibitnow/)
   - [ISBN to BibTeX](https://www.bibtex.com/c/isbn-to-bibtex-converter/)
-- Referências citadas:
-  - https://pubs.acs.org/doi/10.1021/jm4004285
-  - https://pubs.acs.org/doi/abs/10.1021/ja00226a005
-  - https://www.sciencedirect.com/science/article/abs/pii/S0076687915000762
-  - https://www.amazon.com/Understanding-Applications-Pharmaceutical-Sciences-Assessment/dp/0128015055
+- **Referências citadas**:
+[Cherkasov _et al._ (2014)](https://doi.org/10.1021/jm4004285),
+[Cramer _et al._ (1988)](https://doi.org/10.1021/ja00226a005),
+[Shi _et al._ (2015)](https://doi.org/10.1016/bs.mie.2015.02.001) e
+[Roy _et al._ (2015)](https://www.amazon.com/Understanding-Applications-Pharmaceutical-Sciences-Assessment/dp/0128015055).
 
 ## Instruções para Compilar
 
@@ -20,6 +22,10 @@ Para compilar (gerar o PDF) este exemplo, você precisará de uma distribuição
 Utilizamos o compilador [XeLaTeX](https://pt.overleaf.com/learn/latex/XeLaTeX) (incluído na maioria das distribuições LaTeX), o pacote [BibLaTeX](https://pt.overleaf.com/learn/latex/Bibliography_management_with_biblatex) e o estilo [`biblatex-abnt`](https://ctan.org/pkg/biblatex-abnt) para bibliografias.
 
 Este código é potencialmente compatível com outros compiladores (como LuaLaTeX ou pdfLaTeX), mas não foi testado. O estilo `biblatex-abnt` é específico para BibLaTeX, mas usuários de BibTeX podem utilizar o [`abntex2cite`](https://tug.ctan.org/macros/latex/contrib/abntex2/doc/abntex2cite.pdf), embora não haja garantias de que ele esteja atualizado conforme as últimas normas ABNT.
+
+### VSCode
+
+Este repositório tem algumas configurações para [VSCode](https://code.visualstudio.com/) (editor utilizado no vídeo). Ao abrir o repositório no editor, serão sugeridas algumas extensões, das quais principalmente a [LaTeX Workshop](https://github.com/James-Yu/LaTeX-Workshop) é recomendada. A suite de compilação está pré-configurada.
 
 ### Compilação automática com `latexmk`
 
