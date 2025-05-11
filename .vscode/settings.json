@@ -1,0 +1,103 @@
+{
+    "explorer.fileNesting.enabled": true,
+    "explorer.fileNesting.expand": false,
+    "workbench.iconTheme": "material-icon-theme",
+    "latex-workshop.view.outline.floats.enabled": false,
+    "latex-workshop.latex.recipe.default": "first",
+    "latex-workshop.formatting.latex": "latexindent",
+    "latex-workshop.intellisense.citation.backend": "biblatex",
+    "latex-workshop.bibtex-format.tab": "2 spaces",
+    "latex-workshop.bibtex-format.trailingComma": true,
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "Build",
+            "tools": [
+                "latexmk"
+            ]
+        },
+        {
+            "name": "Build (Clean & Build)",
+            "tools": [
+                "Clean up (soft)",
+                "latexmk"
+            ]
+        },
+        {
+            "name": "Build (Single-Step)",
+            "tools": [
+                "xelatex"
+            ]
+        },
+        {
+            "name": "Biber (BibLaTeX)",
+            "tools": [
+                "biber"
+            ]
+        },
+        {
+            "name": "Clean up (soft)",
+            "tools": [
+                "Clean up (soft)"
+            ]
+        },
+        {
+            "name": "Clean up (hard)",
+            "tools": [
+                "Clean up (hard)"
+            ]
+        }
+    ],
+    "latex-workshop.latex.tools": [
+        {
+            "name": "latexmk",
+            "command": "latexmk",
+            "args": [
+                "-xelatex",
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "-outdir=%OUTDIR%",
+                "%DOC%"
+            ],
+            "env": {}
+        },
+        {
+            "name": "xelatex",
+            "command": "xelatex",
+            "args": [
+                "%DOC%"
+            ],
+            "env": {}
+        },
+        {
+            "name": "Clean up (soft)",
+            "command": "latexmk",
+            "args": [
+                "-c",
+                "%DOC%"
+            ],
+            "env": {}
+        },
+        {
+            "name": "Clean up (hard)",
+            "command": "latexmk",
+            "args": [
+                "-C",
+                "%DOC%"
+            ],
+            "env": {}
+        },
+        {
+            "name": "biber",
+            "command": "biber",
+            "args": [
+                "%DOC%"
+            ],
+            "env": {}
+        }
+    ],
+    "explorer.fileNesting.patterns": {
+        ".gitignore": ".gitattributes, .gitmodules, .gitmessage, .lfsconfig, .mailmap, .git-blame*",
+        "*.tex": "$(capture).acn, $(capture).acr, $(capture).alg, $(capture).aux, $(capture).bbl, $(capture).bbl-SAVE-ERROR, $(capture).bcf, $(capture).bib, $(capture).blg, $(capture).fdb_latexmk, $(capture).fls, $(capture).glg, $(capture).glo, $(capture).gls, $(capture).idx, $(capture).ilg, $(capture).ind, $(capture).ist, $(capture).lof, $(capture).log, $(capture).lot, $(capture).nav, $(capture).out, $(capture).run.xml, $(capture).snm, $(capture).synctex.gz*, $(capture).toc, $(capture).xdv, indent.log",
+    },
+}
